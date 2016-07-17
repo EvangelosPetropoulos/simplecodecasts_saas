@@ -33,7 +33,7 @@ gem 'coffee-rails', '4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+#gem 'turbolinks' #comment out this gem because it may conflict with the stripe gem
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -44,6 +44,12 @@ gem 'spring',        group: :development
 
 # Use this Gem for user authentication and login
 gem 'devise', '3.4.1'
+
+# Use the Stripe gem to get credit card payments
+gem 'stripe', '1.16.1'
+
+#
+gem 'figaro', '1.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
